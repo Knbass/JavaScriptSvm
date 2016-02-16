@@ -13,22 +13,29 @@ GuiSvm.SupportVectorMachine = function(){
     //////////////////////////////////////////////
     Karnels = function(){
         
-        var linear;
+        var linear, poly,
+            k = 0 
+        ;
+        
+        // todo: 引数に カーネルのモード，x1, x2 を取るようにし，k の計算を一本化する
         
         linear = function(x1, x2){ //線形カーネル．SMO の計算簡略化に用いる，
             
-            var i,
-                k = 0 
-            ;
-            
-            for(i = 0; i < x1.length; i++){
+            for(var i in x1){
                 k += x1[i] * x2[i];
             }
-            
+            return k;
+        };
+        //////////////////////////////////////////////
+        //////////////////////////////////////////////
+        poly = function(x1, x2){ // 多項式カーネル
+            for(var i in x1){
+                k += Math.pow((x1[i] * x2[i]), dimension);
+            }
             return k;
         };
         
-        return {linear:linear};
+        return {linear:linear, poly:poly};
     };
     //////////////////////////////////////////////
     //////////////////////////////////////////////
