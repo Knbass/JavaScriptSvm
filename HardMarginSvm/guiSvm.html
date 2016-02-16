@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="Author" content="" />
+    <title>GUI SVM</title>
+    <link rel="stylesheet" type="text/css" href="style/guiSvm.css" />
+    <script type="text/javascript" src="js/libraries/jquery.js"></script>
+    <script type="text/javascript" src="js/GuiSvm.js"></script>
+    <script type="text/javascript" src="js/GuiSvm.TeacherData.js"></script>
+    <script type="text/javascript" src="js/GuiSvm.SupportVectorMachine.js"></script>
+    <script type="text/javascript" src="js/GuiSvm.utility.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+
+    <div class="label" id="header">
+        <div class="titleBackground"></div>
+        <p class="title"><strong>GUI SVM</strong></p>
+    </div>  
+    
+    <div class="guiSvmArea" id="guiSvmArea1">
+            <canvas class="guiSvmCanvas" id="guiSvmCanvas1" width="800" height="600"></canvas>
+    </div>
+    
+    <form class="inputForm">
+        <label>正例
+        <input type="number" class="numberInput" id="num1" required />
+        </label>
+        <label class="numberInput">負例
+        <input type="number" class="numberInput" id="num2" required />
+        </label>
+        <div class="button" id="addButton">追加</div>
+    </form>
+</body>
+
+</html>

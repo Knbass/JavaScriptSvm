@@ -1,0 +1,190 @@
+/*
+ここから: ヘッダ用 宣言ブロック
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+*/
+
+html {
+ background-color: #e6e9e9;
+ background-image: -webkit-linear-gradient(270deg,rgb(230,233,233) 0%,rgb(216,221,221) 100%);
+ background-image: linear-gradient(270deg,rgb(230,233,233) 0%,rgb(216,221,221) 100%);
+ -webkit-font-smoothing: antialiased;
+ }
+ 
+ body {
+ margin: 0 auto;
+ padding: 2em 2em 4em;
+ max-width: 1000px;
+ font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+ font-size: 16px;
+ line-height: 1.5em;
+ color: #545454;
+ background-color: #ffffff;
+ box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+ }
+ 
+ h1, h2, h3, h4, h5, h6 {
+ color: #222;
+ font-weight: 600;
+ line-height: 1.3em;
+ }
+ 
+ h2 {
+ margin-top: 1.3em;
+ }
+ 
+ a {
+ color: #0083e8;
+ }
+ 
+ b, strong {
+ font-weight: 600;
+ }
+ 
+ samp {
+ display: none;
+ }
+ 
+ img {
+ -webkit-animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
+ animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
+ background: transparent;
+ border: 10px solid rgba(0, 0, 0, 0.12);
+ border-radius: 4px;
+ display: block;
+ margin: 1.3em auto;
+ max-width: 95%;
+ }
+ 
+.button {
+    position: absolute;
+    height: 20px;
+    background-color: #4699d6;
+    display: inline;
+    padding: 0px 5px 3px 5px;
+    margin: 5px;
+    border-radius: 0px;
+    font-size: 15px;
+    font-weight: 800;
+    color: #4e4e4e;
+}
+
+.button:hover{
+    background-color: #79b1d9;
+}
+
+.button:active{
+    background-color: #a3c5dd;
+}
+/*
+ここまで: html 初期化用 宣言ブロック
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+ここから: ヘッダ用 宣言ブロック
+*/
+
+.label{
+    position: fixed; 
+    color: white;
+    font-size: 34px;
+    background-color: #4699d6;
+    padding: 0.3em 1em 0.2em 0em;
+    height:30px;
+    width: 1030px;
+    z-index: 5;
+}
+
+.label#header{
+    top:0px;
+    text-align: center;
+    margin-left: -32px;
+    z-index: 5;
+}
+
+.label#header .titleBackground{
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:220px;
+    height:47px;
+    background-color:#005981;
+}
+
+.label#header .title{
+    position: absolute;
+    top:-16px;
+    left:0;
+    width: 220px;
+    font-size: 26px;
+    text-align: center;
+}
+
+/*
+ここまで: ヘッダ用 宣言ブロック
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+ここから: guiSVM用 宣言ブロック
+*/
+
+.guiSvmArea#guiSvmArea1{
+    position: relative;
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+    margin-top: 25px;
+    background: #a1d7ff;
+    border: solid 20px #a1d7ff;
+    //padding: -20px;
+}
+
+.guiSvmArea .guiSvmCanvas{
+    position: absolute;
+}
+
+.guiSvmArea .teacherData{
+    position: absolute;
+    margin: 0;
+    border-radius: 100px;
+    z-index: 2;
+}
+
+.guiSvmArea .teacherData.positive{
+    background: #359f49;
+
+}
+
+.guiSvmArea .teacherData.positive:hover{
+    background: #00ff30;
+    -webkit-transition: 0.25s ease-in-out;
+       -moz-transition: 0.25s ease-in-out;
+         -o-transition: 0.25s ease-in-out;
+            transition: 0.25s ease-in-out;
+}
+
+.guiSvmArea .teacherData.negative{
+    background: #a03636;
+
+}
+
+.guiSvmArea .teacherData.negative:hover{
+    background: #f00;
+    -webkit-transition: 0.25s ease-in-out;
+       -moz-transition: 0.25s ease-in-out;
+         -o-transition: 0.25s ease-in-out;
+            transition: 0.25s ease-in-out;
+}
+
+
+.guiSvmArea .teacherData#teacherData1 {
+    top: 100px;
+    left: 100px;
+}
+
+.inputForm{
+    position: relative;
+    margin-left: 80px;
+}
+
+.inputForm .numberInput{
+    width: 80px;   
+}
