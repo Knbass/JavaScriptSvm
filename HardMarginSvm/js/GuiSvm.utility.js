@@ -39,9 +39,7 @@ GuiSvm.utility = function(){
         
     };
     ////////////////////////////////////////////
-    ////////////////////////////////////////////
-    
-    // private. 引数... 適用するエレメント
+    ////////////////////////////////////////////    
     removeDruggAndDropEvent = function(elementADADE){
         
         try{            
@@ -79,7 +77,7 @@ GuiSvm.utility = function(){
         return elementProp;
     };
     
-    return {appendDruggAndDropEvent:appendDruggAndDropEvent, removeDruggAndDropEvent:appendDruggAndDropEvent, 
+    return {appendDruggAndDropEvent:appendDruggAndDropEvent, removeDruggAndDropEvent:removeDruggAndDropEvent, 
             getElementPosition:getElementPosition}
     ;
 };
